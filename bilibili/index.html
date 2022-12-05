@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+
+    <link rel="shortcut icon" href="img/1746091rr77nzz11xhcmuc.png.icon.ico">
+    <link rel="stylesheet" href="css/bootsrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <div id="main_nav">
+            <div id="nav_box">
+                <a href="index.html" id="shouye" onmouseover="byteDance('#shouye')"><img id="b_icon" src="img/zhuyuhang/b_icon.png">首页</a>
+                <a href="#" id="fanju" onmouseover="byteDance('#fanju')">番剧</a>
+                <a href="#" id="zhibo" onmouseover="byteDance('#zhibo')">直播</a>
+                <a href="#" id="youxizhongxin" onmouseover="byteDance('#youxizhongzin')">游戏中心</a>
+                <a href="#" id="huiyuangou" onmouseover="byteDance('#huiyuangou')">会员购</a>
+                <a href="#" id="manhua" onmouseover="byteDance('#manhua')">漫画</a>
+                <a href="#" id="saishi" onmouseover="byteDance('#saishi')">赛事</a>
+                <img id="code" src="img/zhuyuhang/code.png">
+                <a href="#" id="xiazai" onmouseover="byteDance('#xiazai')">下载APP</a>
+            </div>
+            <div id="search_box">
+                <input id="search" type="text" placeholder="距离一百万又近了一步,这把稳了？"/>
+                <input id="button" type="button" value="搜索" onclick="window.location.href = 'http://localhost:63342/bilibili/searchPage.html'"/>
+            </div>
+            <div id="face" onmouseover="alert_user_center()" onmouseleave="pop_user_center()">
+                <img id="face_img" src="img/zhuyuhang/IMG_4289(20211213-112948).JPG">
+            </div>
+            <div id="functions_icon">
+                <a href="#"><img id="functions_icon1" src="img/zhuyuhang/dahuiyuan.png"></a>
+                <a href="#"><img id="functions_icon2" src="img/zhuyuhang/mesg.png" /></a>
+                <a href="#"><img id="functions_icon3" src="img/zhuyuhang/dongtai.png" /></a>
+                <a href="#"><img id="functions_icon4" src="img/zhuyuhang/shoucang.png" /></a>
+                <a href="historyPage.html"><img id="functions_icon5" src="img/zhuyuhang/lishi.png"></a>
+                <a href="#"><img id="functions_icon6" src="./img/zhuyuhang/chuangzuozhongzin.png"></a>
+            </div>
+            <div id="functions">
+                <a href="#">大会员</a>
+                <a href="#">消息</a>
+                <a href="#">动态</a>
+                <a href="#">收藏</a>
+                <a href="historyPage.html">历史</a>
+                <a href="#">创作中心</a>
+            </div>
+        </div>
+        <div id="main_label"><img src="img/zhuyuhang/f7099702f9903c279197ae3948ced7e1b64eefc0.png"></div>
+        <div id="upload">
+            <img src="img/zhuyuhang/upload.png" />投稿
+        </div>
+        <div id="user_center" onmouseover="alert_user_center()" onmouseleave="pop_user_center()">
+            <div class="user_center_name"><a href="userPage.html">FujiwaraTakumi</a></div>
+            <div class="coins">硬币：<span class="numbers">304</span>B币：<span class="numbers">0</span></div>
+            <div class="level">
+                <div class="level_left">Lv.3</div>
+                <meter class="level_number" low="50" high="80" optimum="99" value="67" min="0" max="100"></meter>
+                <div class="level_right">Lv.4</div>
+            </div>
+            <div class="level_infor">当前成长3805，距离升级Lv.4 还需要695</div>
+            <div class="user_infor">
+                <div><a href="#" class="myfocus_numbers">25</a><a href="#" class="myfocus_numbers">1</a><a href="#" class="myfocus_numbers">1</a></div>
+                <div class="user_infor_line2"><a href="#" class="myfocus">关注</a><a href="#" class="myfocus">粉丝</a><a href="#" class="myfocus">动态</a></div>
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/个人中心.png"><span>个人中心</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/管理.png"><span>投稿管理</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/钱包.png"><span>B 币钱包</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/订单中心.png"><span>订单中心</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/视频直播.png"><span>直播中心</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/我的-我的课程.png"><span>我的课程</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <hr id="line">
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/退出登录.png"><span>退出登录</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div id="line1">
+            <div id="feeds">
+                <div class="feed">
+                    <div class="feed_box" id="feed_box1">
+                        <img src="img/zhuyuhang/fengche.png">
+                    </div>
+                    <div class="feed_label">动态</div>
+                </div>
+                <div class="feed">
+                    <div class="feed_box" id="feed_box2">
+                        <img src="img/zhuyuhang/remen.png">
+                    </div>
+                    <div class="feed_label">热门</div>
+                </div>
+                <div class="feed">
+                    <div class="feed_box" id="feed_box3">
+                        <img src="img/zhuyuhang/pindao.png">
+                    </div>
+                    <div class="feed_label">频道</div>
+                </div>
+            </div>
+            <div id="types">
+                <div id="types_line1">
+                    <div class="type">
+                        <a href="#">直播</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">电影</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">电视剧</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">纪录片</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">游戏</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">音乐</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">影视</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">知识</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">资讯</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">生活</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">时尚</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">动物园</a>
+                    </div>
+                </div>
+                <div id="types_line2">
+                    <div class="type">
+                        <a href="#">番剧</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">国创</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">综艺</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">动画</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">鬼畜</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">舞蹈</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">娱乐</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">科技</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">美食</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">汽车</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">运动</a>
+                    </div>
+                    <div class="type">
+                        <a href="#">更多></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="line2">
+            <div id="scroll_img">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/zhuyuhang/feed_admin/0b3fa843d8da983785da11021f719b96a4a511b6.jpg@976w_550h_1c.png" alt="...">
+                            <div class="carousel-caption scroll_title">老虎猫，你敢撸吗？</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/zhuyuhang/feed_admin/8ce88041c40949487dee074bff453c4596363c66.jpg@976w_550h_1c.png" alt="...">
+                            <div class="carousel-caption scroll_title">轮胎变成买不起的样子</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/zhuyuhang/feed_admin/9a2b65f896e7685c0782b223c5303ff63883652f.png@976w_550h_1c.png" alt="...">
+                            <div class="carousel-caption scroll_title">这个伤害真爆炸！！！</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/zhuyuhang/feed_admin/013f40e1554805d9f2f4272be612c70d632d8909.jpg@976w_550h_1c.webp" alt="...">
+                            <div class="carousel-caption scroll_title">天府四川，自然之美</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/zhuyuhang/feed_admin/22ed612e030443800f3cbb297b598586378a7245.jpg@976w_550h_1c.webp" alt="...">
+                            <div class="carousel-caption scroll_title">科技创造威震天！！！</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/zhuyuhang/feed_admin/85ae1726d1b736f8a2c6b262083bdb6fce2a01bc.png@976w_550h_1c.webp" alt="...">
+                            <div class="carousel-caption scroll_title">让阿贝多再次伟大吧</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/zhuyuhang/feed_admin/965a0bdec26d95e8fa162f401858bee96928af45.png@976w_550h_1c.webp" alt="...">
+                            <div class="carousel-caption scroll_title">虚拟形象礼盒，随时领取</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/zhuyuhang/feed_admin/1476458fd3d8ecae86ac0142b75161a65b0c5807.png@976w_550h_1c.webp" alt="...">
+                            <div class="carousel-caption scroll_title">这波顶级拉扯，学会了？</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/zhuyuhang/feed_admin/98359865f3f0371774cc41bebd4fffd99bfc8bce.jpg@976w_550h_1c.webp" alt="...">
+                            <div class="carousel-caption scroll_title">给猫咪洗澡？还是整容</div>
+                        </div>
+                        <div class="item">
+                            <img src="img/zhuyuhang/feed_admin/d15a63eece8bd6ebe4817d47de7be667b07e49e8.jpg@976w_550h_1c.webp" alt="...">
+                            <div class="carousel-caption scroll_title">余额宝，寻舞计划</div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                    <div class="scroll_img_shadow"></div>
+                </div>
+            </div>
+
+            <div id="feed_cards">
+                <div id="feed_cards_line1">
+                    <div class="card">
+                        <div class="card_main" id="card_1">
+                            <a href="#" class="played_numbers">
+                                <img src="img/zhuyuhang/play.png"> 118万
+                            </a>
+                            <a href="#" class="goods">
+                                <img src="img/zhuyuhang/good.png"> 2.8万
+                            </a>
+                            <a href="#" class="times">08:06</a>
+                            <a class="plays" href="playingPage.html">
+                                <img src="img/zhuyuhang/channel/播放.png">
+                            </a>
+                        </div>
+                        <div class="card_face">
+                            <img src="img/zhuyuhang/channel/face/2c8fde67e423bff9d383fffc322404a88a88e5e7.jpg@72w_72h.webp">
+                        </div>
+                        <div class="card_content">
+                            <a class="card_content_title">【TMEA现场放送】爷青回名场面！！！周杰伦神级经典曲...</a>
+                            <a class="card_content_name">TMElive腾讯音乐超现场 · 12-11</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_main" id="card_2">
+                            <a href="#" class="played_numbers">
+                                <img src="img/zhuyuhang/play.png"> 6.8万
+                            </a>
+                            <a href="#" class="goods">
+                                <img src="img/zhuyuhang/good.png"> 5453
+                            </a>
+                            <a href="#" class="times">12:36</a>
+                            <a class="plays" href="playingPage.html">
+                                <img src="img/zhuyuhang/channel/播放.png">
+                            </a>
+                        </div>
+                        <div class="card_face">
+                            <img src="img/zhuyuhang/channel/face/5d0166221aae4b1673f62679df62bdd0f6a64a11.jpg@72w_72h.webp">
+                        </div>
+                        <div class="card_content">
+                            <a class="card_content_title">反 向 带 货 P K 版 本</a>
+                            <a class="card_content_name">STN工作室 · 17小时前</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_main" id="card_3">
+                            <a href="#" class="played_numbers">
+                                <img src="img/zhuyuhang/play.png"> 258万
+                            </a>
+                            <a href="#" class="goods">
+                                <img src="img/zhuyuhang/good.png"> 7.8万
+                            </a>
+                            <a href="#" class="times">04:56</a>
+                            <a class="plays" href="#">
+                                <img src="img/zhuyuhang/channel/播放.png">
+                            </a>
+                        </div>
+                        <div class="card_face">
+                            <img src="img/zhuyuhang/channel/face/6b49f7d46e78d996cd5d3895048c8c1d9302e51b.jpg@72w_72h.webp">
+                        </div>
+                        <div class="card_content">
+                            <a class="card_content_title">期待工藤新一和毛小兰的婚后生活</a>
+                            <a class="card_content_name">咻咻满  · 11-25</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="feed_cards_line2">
+                    <div class="card">
+                        <div class="card_main" id="card_4">
+                            <a href="#" class="played_numbers">
+                                <img src="img/zhuyuhang/play.png"> 654.5万
+                            </a>
+                            <a href="#" class="goods">
+                                <img src="img/zhuyuhang/good.png"> 106.5万
+                            </a>
+                            <a href="#" class="times">20.46</a>
+                            <a class="plays" href="#">
+                                <img src="img/zhuyuhang/channel/播放.png">
+                            </a>
+                        </div>
+                        <div class="card_face">
+                            <img src="img/zhuyuhang/channel/face/1fb779ed26c192e6451a1038772c5c3492c7f957.jpg@72w_72h.webp">
+                        </div>
+                        <div class="card_content">
+                            <a class="card_content_title">我们终于蹭到周淑怡的饭了！！！</a>
+                            <a class="card_content_name">力元君 · 12-16</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_main" id="card_5">
+                            <a href="#" class="played_numbers">
+                                <img src="img/zhuyuhang/play.png"> 11.9万
+                            </a>
+                            <a href="#" class="goods">
+                                <img src="img/zhuyuhang/good.png"> 6768
+                            </a>
+                            <a href="#" class="times">03.15</a>
+                            <a class="plays" href="#">
+                                <img src="img/zhuyuhang/channel/播放.png">
+                            </a>
+                        </div>
+                        <div class="card_face">
+                            <img src="img/zhuyuhang/channel/face/cd6e4d04b23f0ecd96fec6fd4c4d15d630d42a6b.jpg@72w_72h.webp">
+                        </div>
+                        <div class="card_content">
+                            <a class="card_content_title">【兰亭序】古筝（纯筝）一首经典绝美的中国风，杰伦YYDS！</a>
+                            <a class="card_content_name">崔江卉 · 12-10</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_main" id="card_6">
+                            <a href="#" class="played_numbers">
+                                <img src="img/zhuyuhang/play.png"> 326.1万
+                            </a>
+                            <a href="#" class="goods">
+                                <img src="img/zhuyuhang/good.png"> 32.1万
+                            </a>
+                            <a href="#" class="times">15.04</a>
+                            <a class="plays" href="#">
+                                <img src="img/zhuyuhang/channel/播放.png">
+                            </a>
+                        </div>
+                        <div class="card_face">
+                            <img src="img/zhuyuhang/channel/face/94c28086fc3ac90d6b191eb96a91a25f14752a35.jpg@72w_72h.webp">
+                        </div>
+                        <div class="card_content">
+                            <a class="card_content_title">拆100只蟹，只做一碗面，吃完感觉要飞天</a>
+                            <a class="card_content_name">万能工具人阿伟 · 11-26</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="line3">
+            <div id="popularize">
+                <img src="img/zhuyuhang/tuiguang.png"> 推广
+            </div>
+            <div class="popularize_cards">
+                <div class="card popularize_img">
+                    <div class="card_main" id="card_7">
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/eva2.png">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title">每天建模一小时，趁年轻多学点技能养活自己</a>
+                        <a class="card_content_name">零基础建模教学</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_main" id="card_8">
+                        <a href="#" class="played_numbers">
+                            <img src="img/zhuyuhang/play.png"> 52.5万
+                        </a>
+                        <a href="#" class="goods">
+                            <img src="img/zhuyuhang/good.png"> 2.4万
+                        </a>
+                        <a href="#" class="times">02.05</a>
+                        <a class="plays" href="#">
+                            <img src="img/zhuyuhang/channel/播放.png">
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/44e6d1d73788c5f662d7dbb4832f1e9efc8f3919.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title">2021B站跨晚，为你放一场焰火|灿烂奔赴 最...</a>
+                        <a class="card_content_name">哔哩哔哩晚会 · 6小时前</a>
+                    </div>
+                </div>
+
+                <div class="card popularize_img">
+                    <div class="card_main" id="card_9">
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/eva2.png">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title">每天建模一小时，挑战外包赚钱！</a>
+                        <a class="card_content_name">学思培训</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_main" id="card_10">
+                        <a href="#" class="played_numbers">
+                            <img src="img/zhuyuhang/play.png"> 6.1万
+                        </a>
+                        <a href="#" class="goods">
+                            <img src="img/zhuyuhang/good.png"> 6782
+                        </a>
+                        <a href="#" class="times">08.42</a>
+                        <a class="plays" href="#">
+                            <img src="img/zhuyuhang/channel/播放.png">
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/972de00e606e66aaa1b7a71f5a145a182cb7f240.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title">年度黑马！不做神话IP，也能讲好中国故事的动画电影！【...</a>
+                        <a class="card_content_name">荟小荟 · 12-17</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_main" id="card_11">
+                        <a href="#" class="played_numbers">
+                            <img src="img/zhuyuhang/play.png"> 31.6万
+                        </a>
+                        <a href="#" class="goods">
+                            <img src="img/zhuyuhang/good.png"> 2.1万
+                        </a>
+                        <a href="#" class="times">02.15</a>
+                        <a class="plays" href="#">
+                            <img src="img/zhuyuhang/channel/播放.png">
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/ad225763131677b9a9d5b01a5d903c220e2c9c4c.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title">你知道拖把精可蒙犬身上的拖把布有多重要吗？</a>
+                        <a class="card_content_name">张霹雳的铲屎官 · 12-13</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advertisement">
+                <img src="img/zhuyuhang/eva.png">
+            </div>
+        </div>
+
+        <div id="line4">
+            <div id="livestream">
+                <img src="img/zhuyuhang/zhibo.png"> 直播
+            </div>
+
+            <div id="livestream_line1">
+                <div class="card live">
+                    <div class="card_main" id="card_12">
+                        <a href="#" class="peoples">
+                            <img src="img/zhuyuhang/peoples.png"> 5.6万
+                        </a>
+                        <a href="#" class="kinds">
+                            命运2
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/592df24a19ecd3ada7b68b2503fcd927550facc1.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title"><span class="status"><img src="img/zhuyuhang/live.gif"> 直播中</span>主播距你1.2km</a>
+                        <a class="card_content_name">甜酒不甜</a>
+                    </div>
+                </div>
+
+                <div class="card live">
+                    <div class="card_main" id="card_13">
+                        <a href="#" class="peoples">
+                            <img src="img/zhuyuhang/peoples.png"> 20.7万
+                        </a>
+                        <a href="#" class="kinds">
+                            聊天电台
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/609196ec0963a510ab2e1c36f5edf3453a7d2cc9.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title"><span class="status"><img src="img/zhuyuhang/live.gif"> 直播中</span>世界这么大，还好有你</a>
+                        <a class="card_content_name">希希不哭</a>
+                    </div>
+                </div>
+
+                <div class="card live">
+                    <div class="card_main" id="card_14">
+                        <a href="#" class="peoples">
+                            <img src="img/zhuyuhang/peoples.png"> 1138
+                        </a>
+                        <a href="#" class="kinds">
+                            虚拟主播
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/2fbe0a5a52a8b717270972608233ef654981bb86.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title"><span class="status"><img src="img/zhuyuhang/live.gif"> 直播中</span>【B限】第一个VALO</a>
+                        <a class="card_content_name">日月咪玉-官方</a>
+                    </div>
+                </div>
+
+                <div class="card live">
+                    <div class="card_main" id="card_15">
+                        <a href="#" class="peoples">
+                            <img src="img/zhuyuhang/peoples.png"> 3991
+                        </a>
+                        <a href="#" class="kinds">
+                            游戏赛事
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/37321f13ed3eb283ffc68f92174ee9b81ec4f65f.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title"><span class="status"><img src="img/zhuyuhang/live.gif"> 直播中</span>KBG-影响力赛道冠军</a>
+                        <a class="card_content_name">英雄联盟手游电竞</a>
+                    </div>
+                </div>
+
+                <div class="card live">
+                    <div class="card_main" id="card_16">
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/bilibili.png">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title">开启时空之旅</a>
+                        <a class="card_content_name">bilibili晚会</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="livestream_line2">
+                <div class="card live">
+                    <div class="card_main" id="card_17">
+                        <a href="#" class="peoples">
+                            <img src="img/zhuyuhang/peoples.png"> 199万
+                        </a>
+                        <a href="#" class="kinds">
+                            DOTA2
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/bcfe4019a4de4f6eb98690774442046c684ca124.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title"><span class="status"><img src="img/zhuyuhang/live.gif"> 直播中</span>我来了</a>
+                        <a class="card_content_name">longdd黄翔</a>
+                    </div>
+                </div>
+
+                <div class="card live">
+                    <div class="card_main" id="card_18">
+                        <a href="#" class="peoples">
+                            <img src="img/zhuyuhang/peoples.png"> 1695
+                        </a>
+                        <a href="#" class="kinds">
+                            视频聊天
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/4f35895670e80fae49f022eac937c173375c0b2f.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title"><span class="status"><img src="img/zhuyuhang/live.gif"> 直播中</span>B站颜值天花板</a>
+                        <a class="card_content_name">呱酱OvO</a>
+                    </div>
+                </div>
+
+                <div class="card live">
+                    <div class="card_main" id="card_19">
+                        <a href="#" class="peoples">
+                            <img src="img/zhuyuhang/peoples.png"> 1.4万
+                        </a>
+                        <a href="#" class="kinds">
+                            明日方舟
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/7e9d81a94060d0226cec9c5a89df372a4bf59abb.jpg@72w_72h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title"><span class="status"><img src="img/zhuyuhang/live.gif"> 直播中</span>冬至快乐，吃饺子去</a>
+                        <a class="card_content_name">今天鸽子球咕咕了吗</a>
+                    </div>
+                </div>
+
+                <div class="card live">
+                    <div class="card_main" id="card_20">
+                        <a href="#" class="peoples">
+                            <img src="img/zhuyuhang/peoples.png"> 1428
+                        </a>
+                        <a href="#" class="kinds">
+                            聊天电台
+                        </a>
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/a524915c500d1753db78ab93dc1c5c977c2aa86d.jpg@92w_92h.webp">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title"><span class="status"><img src="img/zhuyuhang/live.gif"> 直播中</span>守护进 青叔音总裁...</a>
+                        <a class="card_content_name">林枫_</a>
+                    </div>
+                </div>
+
+                <div class="card live">
+                    <div class="card_main" id="card_21">
+                    </div>
+                    <div class="card_face">
+                        <img src="img/zhuyuhang/channel/face/王者荣耀.png">
+                    </div>
+                    <div class="card_content">
+                        <a class="card_content_title">直播试玩送Q币</a>
+                        <a class="card_content_name">王者荣耀</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="help_bars">
+        <div class="help_bar" id="help_bar1" onmouseover="changeColor('#help_bar1');" onmouseleave="backColor('#help_bar1');">
+            <img src="img/zhuyuhang/fenqu.png">
+            <div>分区</div>
+        </div>
+        <div class="help_bar" id="help_bar2" onmouseover="changeColor('#help_bar2');" onmouseleave="backColor('#help_bar2');">
+            <img src="img/zhuyuhang/kefu.png">
+            <div>客服</div>
+        </div>
+        <div class="help_bar" id="help_bar3" onmouseover="changeColor('#help_bar3');" onmouseleave="backColor('#help_bar3');">
+            <div>回到 旧版</div>
+        </div>
+    </div>
+</body>
+</html>

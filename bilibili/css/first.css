@@ -1,0 +1,495 @@
+		.top{
+			width: 100%;
+			height: 45px;
+			border-bottom: 1px solid lightgrey;
+		}
+		.pic1{
+			position: absolute;
+			margin-top: px;
+			margin-left: 20px;
+			width: 70px;
+			height: 30px;
+			margin-top: 5px;
+		}
+		.topfont1{
+			display: inline-block;
+			font-size: 14px;
+			color: black;
+			text-decoration: none;
+			margin-left: 5px;
+		}
+		.topfont3{
+			display: inline-block;
+			font-size: 14px;
+			color: black;
+			text-decoration: none;
+			margin-left: 590px;
+		}
+		.topfont2{
+			text-decoration: none;
+		}
+		.zhuzhan{
+			margin-left: 100px;
+		}
+		.pic1set1{
+			position: absolute;
+			display: inline-block;
+			margin-top: 10px;
+		}
+		.xiazai{
+			margin-left: 18px;
+		}
+		.pic2{
+			position: absolute;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			margin-left: 540px;
+		}
+		.tougao{
+			width: 90px;
+			height: 25px;
+			border: 1px solid #FB7299;
+			background-color: #FB7299;
+			margin-left: 1400px;
+			margin-top: -35px;
+		}
+		.rightfont{
+			color: white;
+			font-size: 13px;
+			margin-left: 27px;
+			margin-top: 2px;
+		}
+			.workac{
+				width: 55px;
+				height: 20px;
+				background-color: pink;
+				margin-top: 20px;
+				margin-left: 160px;
+			}
+			.noneunderline{
+				text-decoration: none;
+			}
+			.workfont{
+				font-size: 12px;
+				color: white;
+				padding-left: 4px;
+				padding-top: 2px;
+			}
+			.head{
+				margin-left: 230px;
+				margin-top: -20px;
+			}
+			.infor{
+				font-size: 5px;
+				display: inline-block;
+				color: gray;
+			}
+			.number{
+				margin-left: 160px;
+			}
+			.playd{
+				width: 900px;
+				height: 600px;
+				margin-top: 10px;
+				margin-left: 160px;
+			}
+			.play{
+				width: 900px;
+				height: 600px;
+			}
+			.author{
+				width: 200px;
+				height: 70px;
+				margin-left: 1080px;
+				margin-top: -870px;
+			}
+			.authorpic{
+				width: 50px;
+				height: 50px;
+			}
+			.authorname{
+				color: red;
+				font-size: 13px;
+			}
+			.authornamed{
+				margin-left: 60px;
+				margin-top: -65px;
+			}
+			.message{
+				margin-left: 132px;
+				margin-top: -17px;
+				font-size: 12px;
+				color: black;
+			}
+			.messaged{
+				margin-left: 110px;
+				margin-top: -32px;
+			}
+			.messagepic{
+				width: 15px;
+				height: 10px;
+			}
+			.wb{
+				font-size: 12px;
+				color: gray;
+				margin-left: 60px;
+				margin-top: -10px;
+			}
+			.battery{
+				width: 90px;
+				height: 30px;
+				background-color: #FB7299;
+				margin-left: 60px;
+			}
+			.batteryfont{
+				color: white;
+				font-size: 13px;
+				padding-left: 10px;
+				padding-top: 5px;
+			}
+			.fans{
+				width: 130px;
+				height: 30px;
+				background-color: #E7E7E7;
+				margin-left: 170px;
+				margin-top: -42px;
+			}
+			.fansfont{
+				color: #999999;
+				font-size: 13px;
+				padding-left: 12px;
+				padding-top: 5px;
+			}
+			.right{
+				margin-top: 10px;
+				width: 330px;
+				height: 800px;
+				margin-left: 1080px;
+			}
+			.barrage{
+				width: 330px;
+				height: 50px;
+				background-color: #F4F4F4;
+			}
+			.barragefont{
+				padding-left: 15px;
+				padding-top: 13px;
+				color: #000000;
+			}
+			.open{
+				font-size: 13px;
+				margin-left: 270px;
+				margin-top: -36px;
+				color: #000000;
+			}
+			.rightone{
+				width: 330px;
+				height: 90px;
+				margin-top: 15px;
+			}
+			.pic3{
+				width: 140px;
+				height: 90px;
+			}
+			.rightonefont{
+				margin-top: -98px;
+				margin-left: 150px;
+				color: black;
+			}
+			.rightonefont:hover{
+				color:#00A1D6;
+			}
+			.upregion{
+				margin-top: 35px;
+				margin-left: 150px;
+				font-size: 12px;
+				color: #808080;
+			}
+			.rightupnumber{
+				font-size: 12px;
+				margin-left: 150px;
+				margin-top: -5px;
+				color: #808080;
+			}
+			.upregiontwo{
+				margin-left: 150px;
+				font-size: 12px;
+				color: #808080;
+			}
+			.rightupnumbertwo{
+				font-size: 12px;
+				margin-top: -5px;
+				margin-left: 150px;
+				color: #808080;
+			}
+			.watchpeople{
+				display: inline-block;
+				width: 900px;
+				height: 50px;
+				margin-left: 160px;
+				box-shadow: 5px 5px 10px #E7E7E7;
+			}
+			.watchone{
+				font-size: 13px;
+				margin-left: 20px;
+			}
+			.threeline{
+				width: 900px;
+				height: 70px;
+				margin-left: 160px;
+				border-bottom: 1px solid lightgrey;
+			}
+			.advtise{
+				margin-left: 150px;
+				margin-top: 35px;
+				width: 25px;
+				height: 15px;
+				border: 1px solid #808080;
+				border-radius: 10%;
+			}
+			.adfont{
+				font-size: 12px;
+				margin-top: -1px;
+				color: #808080;
+			}
+			.adfonttwo{
+				font-size: 13px;
+				margin-left: 190px;
+				margin-top: -15px;
+				color: #808080 ;
+			}
+			.autoplay{
+				margin-top: -40px;
+				margin-left: 200px;
+				font-size: 12px;
+				color: #808080;
+			}
+			.thpic1{
+				width: 30px;
+				height: 33px;
+				margin-top: 15px;
+			}
+			.thpic1:hover{
+				
+			}
+			.thfont1{
+				margin-left: 40px;
+				margin-top: -30px;
+				color: black;
+			}
+			.thfont1:hover{
+				color: #00A1D6;
+			}
+			.thpic2{
+				position: absolute;
+				margin-left: 110px;
+				margin-top: -40px;
+				width: 30px;
+				height: 26px;
+			}
+			.thfont2{
+				margin-left: 150px;
+				margin-top: -37px;
+				color: black;
+			}
+			.thfont2:hover{
+				color: #00A1D6;
+			}
+			.thpic3{
+				position: absolute;
+				margin-left: 220px;
+				margin-top: -40px;
+				width: 30px;
+				height: 26px;
+			}
+			.thfont3{
+				margin-left: 260px;
+				margin-top: -35px;
+				color: black;
+			}
+			.thfont3:hover{
+				color: #00A1D6;
+			}
+			.thpic4{
+				position: absolute;
+				margin-left: 320px;
+				margin-top: -40px;
+				width: 30px;
+				height: 26px;
+			}
+			.thfont4{
+				margin-left: 360px;
+				margin-top: -35px;
+				color: black;
+			}
+			.thfont4:hover{
+				color: #00A1D6;
+			}
+			.search_box{
+				height: 30px;
+				width: 560px; 
+				display: block;
+				margin-top: -35px;
+				margin-left: 320px;
+				overflow: hidden;
+				border-radius: 4px;
+			}
+			#danmu{
+				display: inline-block;
+				margin-top: -10px;
+				width:487.2px;
+				height: 45px;
+				color:#808080 ;
+				background-color: #EEEEEE;
+				border: none;
+				padding-left: 20px;
+				padding-top: 5px;
+				margin-left: -5px;
+			}
+			#fasong{
+				display: inline-block;
+				color: white;
+				background-color: #00A1D6;
+				border: none;
+				width: 60px;
+				height: 38px;
+				margin-left: -10px;
+				margin-top: -5px;
+			}
+			.aupic{
+				position: absolute;
+				margin-top:-32px ;
+				margin-left: 260px;
+				width: 28px;
+				height: 24px;
+			}
+			.wapic1{
+				position: absolute;
+				margin-top:-32px ;
+				margin-left: 230px;
+				width: 30px;
+				height: 20px;
+			}
+			.wapic2{
+				position: absolute;
+				margin-top:-32px ;
+				margin-left: 280px;
+				width: 25px;
+				height: 20px;
+			}
+			.wapic2 a:hover{
+				background-image: url(img/chenzhilei/K3V@~G4P9E%5B_SOVP2@IU~UO.png);
+			}
+			#gaojian{
+				font-size: 12px;
+				margin-left: 700px;
+				color: black;
+				margin-top: -38px;
+			}
+			#gaojian:hover{
+				color:#00A1D6 ;
+			}
+			.notebook{
+				width: 70px;
+				height: 25px;
+				border: 1px #00A1D6 solid;
+				margin-left: 770px;
+				margin-top: -32px;
+			}
+			.notebook:hover{
+				background-color: #00A1D6;
+			}
+			.nofont{
+				font-size: 12px;
+				margin-left: 30px;
+				margin-top: -20px;
+				color: #00A1D6;
+			}
+			.nofont:hover{
+				color: white;
+			}
+			.nopic{
+				margin-left: 10px;
+				margin-top: 5px;
+			}
+			.pot{
+				margin-left: 870px;
+				margin-top: -20px;
+			}
+			.chacha{
+				width: 15px;
+				height: 15px;
+				margin-left: 150px;
+				margin-top: 20px;
+			}
+			.chafont{
+				font-size: 12px;
+				margin-left: 180px;
+				margin-top: -20px;
+				color: #B7B8B7;
+			}
+			.icehot{
+				font-size: 12px;
+				margin-left: 150px;
+			}
+			.hezi{
+				display: inline-block;
+				width: 100px;
+				height: 15px;
+				border-radius: 10px;
+				background-color: #F6F7F8;
+				margin-left: 150px;
+				border: 1px solid #F6F7F8;
+			}
+			.hezi:hover{
+				border: 1px solid #00A1D6;
+			}
+			.hezi2{
+				display: inline-block;
+				width: 40px;
+				height: 15px;
+				border-radius: 10px;
+				background-color: #F6F7F8;
+				margin-left: 10px;
+				border: 1px solid #F6F7F8;
+			}
+			.hezi2:hover{
+				border: 1px solid #00A1D6;
+			}
+			.hezi3{
+				display: inline-block;
+				width: 80px;
+				height: 15px;
+				border-radius: 10px;
+				background-color: #F6F7F8;
+				margin-left: 10px;
+				border: 1px solid #F6F7F8;
+			}
+			.hezi3:hover{
+				border: 1px solid #00A1D6;
+			}
+			.hezi4{
+				display: inline-block;
+				width: 80px;
+				height: 15px;
+				border-radius: 10px;
+				background-color: #F6F7F8;
+				margin-left: 10px;
+				border: 1px solid #F6F7F8;
+			}
+			.hezi4:hover{
+				border: 1px solid #00A1D6;
+			}
+			.hezifont{
+				font-size: 12px;
+				color: #00A1D6;
+				text-align: center;
+				margin-top: -1px;
+			}
+			.hezifont2{
+				font-size: 12px;
+				color: black;
+				text-align: center;
+				margin-top: -1px;
+		}

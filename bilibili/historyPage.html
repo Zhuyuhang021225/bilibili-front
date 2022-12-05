@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>历史记录</title>
+
+    <link rel="shortcut icon" href="img/1746091rr77nzz11xhcmuc.png.icon.ico">
+    <link rel="stylesheet" href="css/bootsrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/history.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/history.js"></script>
+
+</head>
+<body>
+    <header>
+        <div id="main_nav">
+            <div id="nav_box">
+                <a href="index.html" id="shouye" onmouseover="byteDance('#shouye')"><img src="img/zhuyuhang/b_icon.png">首页</a>
+                <a href="https://www.bilibili.com/anime/" id="fanju" onmouseover="byteDance('#fanju')">番剧</a>
+                <a href="#" id="zhibo" onmouseover="byteDance('#zhibo')">直播</a>
+                <a href="#" id="youxizhongxin" onmouseover="byteDance('#youxizhongzin')">游戏中心</a>
+                <a href="#" id="huiyuangou" onmouseover="byteDance('#huiyuangou')">会员购</a>
+                <a href="#" id="manhua" onmouseover="byteDance('#manhua')">漫画</a>
+                <a href="#" id="saishi" onmouseover="byteDance('#saishi')">赛事</a>
+                <img src="img/zhuyuhang/code.png">
+                <a href="#" id="xiazai" onmouseover="byteDance('#xiazai')">下载APP</a>
+            </div>
+            <div id="search_box">
+                <input id="search" type="text" placeholder="距离一百万又近了一步,这把稳了？"/>
+                <input id="button" type="button" value="搜索"/>
+            </div>
+            <div id="face" onmouseover="alert_user_center()" onmouseleave="pop_user_center()">
+                <img id="face_img" src="img/zhuyuhang/IMG_4289(20211213-112948).JPG">
+            </div>
+            <div id="functions_icon">
+                <a href="#"><img id="functions_icon1" src="img/zhuyuhang/dahuiyuan.png"></a>
+                <a href="#"><img id="functions_icon2" src="img/zhuyuhang/mesg.png" /></a>
+                <a href="#"><img id="functions_icon3" src="img/zhuyuhang/dongtai.png" /></a>
+                <a href="#"><img id="functions_icon4" src="img/zhuyuhang/shoucang.png" /></a>
+                <a href="historyPage.html"><img id="functions_icon5" src="img/zhuyuhang/lishi.png"></a>
+                <a href="#"><img id="functions_icon6" src="./img/zhuyuhang/chuangzuozhongzin.png"></a>
+            </div>
+            <div id="functions">
+                <a href="#">大会员</a>
+                <a href="#">消息</a>
+                <a href="#">动态</a>
+                <a href="#">收藏</a>
+                <a href="historyPage.html">历史</a>
+                <a href="#">创作中心</a>
+            </div>
+        </div>
+        <div id="main_label"><img src="img/zhuyuhang/f7099702f9903c279197ae3948ced7e1b64eefc0.png"></div>
+        <div id="upload">
+            <img src="img/zhuyuhang/upload.png" />投稿
+        </div>
+        <div id="user_center" onmouseover="alert_user_center()" onmouseleave="pop_user_center()">
+            <div class="user_center_name">FujiwaraTakumi</div>
+            <div class="coins">硬币：<span class="numbers">304</span>B币：<span class="numbers">0</span></div>
+            <div class="level">
+                <div class="level_left">Lv.3</div>
+                <meter class="level_number" low="50" high="80" optimum="99" value="67" min="0" max="100"></meter>
+                <div class="level_right">Lv.4</div>
+            </div>
+            <div class="level_infor">当前成长3805，距离升级Lv.4 还需要695</div>
+            <div class="user_infor">
+                <div><a href="#" class="myfocus_numbers">25</a><a href="#" class="myfocus_numbers">1</a><a href="#" class="myfocus_numbers">1</a></div>
+                <div class="user_infor_line2"><a href="#" class="myfocus">关注</a><a href="#" class="myfocus">粉丝</a><a href="#" class="myfocus">动态</a></div>
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/个人中心.png"><span>个人中心</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/管理.png"><span>投稿管理</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/钱包.png"><span>B 币钱包</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/订单中心.png"><span>订单中心</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/视频直播.png"><span>直播中心</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/我的-我的课程.png"><span>我的课程</span><img class="more" src="img/zhuyuhang/右键.png">
+            </div>
+            <hr id="line">
+            <div class="user_infor_item">
+                <img class="icon" src="img/zhuyuhang/退出登录.png"><span>退出登录</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content_line1">
+            <div class="history_icon">
+                <img src="img/zhuyuhang/闹钟.png"> 历史记录
+            </div>
+            <div class="search_box">
+                <input type="text" placeholder="搜索历史记录" onclick="search_box1();" onblur="search_box2()">
+                <img src="img/zhuyuhang/搜索.png">
+            </div>
+
+            <div class="stop_memo">暂停记录历史</div>
+            <div class="clean_memo">清空历史</div>
+        </div>
+
+        <div class="history_item" id="item1">
+            <div class="small_pointer"></div>
+            <div class="history_time">12:42</div>
+            <div class="history_img">
+                <div class="watched_bar"></div>
+                <div class="watched_number"></div>
+            </div>
+            <div class="history_infor">
+                <div class="history_title"><a href="#">周杰伦 演唱会 歌迷点歌 至今 都 无法 超越的经典。</a></div>
+                <div class="divice_times"><img src="img/zhuyuhang/手机.png"> <span>看到</span> 00:22</div>
+                <div class="history_user">
+                    <img src="img/zhuyuhang/channel/face/2fbe0a5a52a8b717270972608233ef654981bb86.jpg@72w_72h.webp">
+                    <span class="author">西门吹神</span><div class="author_line"></div><span class="history_kind">音乐现场</span>
+                </div>
+                <img class="delete" src="img/zhuyuhang/垃圾桶.png">
+            </div>
+        </div>
+
+        <div class="history_item" id="item2">
+            <div class="small_pointer"></div>
+            <div class="history_time">08:57</div>
+            <div class="history_img">
+                <div class="watched_bar"></div>
+                <div class="watched_number"></div>
+            </div>
+            <div class="history_infor">
+                <div class="history_title"><a href="#">拆100只蟹，只做一碗面，吃完感觉要飞天</a></div>
+                <div class="divice_times"><img src="img/zhuyuhang/电脑-54.png"> <span>看到</span> 03:32</div>
+                <div class="history_user">
+                    <img src="img/zhuyuhang/channel/face/94c28086fc3ac90d6b191eb96a91a25f14752a35.jpg@72w_72h.webp">
+                    <span class="author">万能工具人阿伟</span><div class="author_line"></div><span class="history_kind">美食制作</span>
+                </div>
+                <img class="delete" src="img/zhuyuhang/垃圾桶.png">
+            </div>
+        </div>
+
+        <div class="history_item" id="item3">
+            <div class="small_pointer"></div>
+            <div class="history_time">16:30</div>
+            <div class="history_img">
+                <div class="watched_bar"></div>
+                <div class="watched_number"></div>
+            </div>
+            <div class="history_infor">
+                <div class="history_title"><a href="#">2021B站跨晚主题影片 《放焰火》| 灿烂奔赴 最美的夜</a></div>
+                <div class="divice_times"><img src="img/zhuyuhang/电脑-54.png"> <span>看到</span> 2021B站跨晚主题...</div>
+                <img class="delete" src="img/zhuyuhang/垃圾桶.png">
+            </div>
+        </div>
+
+        <div class="history_item" id="item4">
+            <div class="small_pointer"></div>
+            <div class="history_time">08:57</div>
+            <div class="history_img">
+                <div class="watched_bar"></div>
+                <div class="watched_number"></div>
+            </div>
+            <div class="history_infor">
+                <div class="history_title"><a href="#">我们终于蹭到周淑怡的饭了！！！</a></div>
+                <div class="divice_times"><img src="img/zhuyuhang/手机.png"> <span>看到</span> 19:32</div>
+                <div class="history_user">
+                    <img src="img/zhuyuhang/channel/face/1fb779ed26c192e6451a1038772c5c3492c7f957.jpg@72w_72h.webp">
+                    <span class="author">力元君</span><div class="author_line"></div><span class="history_kind">搞笑</span>
+                </div>
+                <img class="delete" src="img/zhuyuhang/垃圾桶.png">
+            </div>
+        </div>
+
+        <div class="history_item" id="item5">
+            <div class="small_pointer"></div>
+            <div class="history_time">2021-12-21</div>
+            <div class="history_img">
+                <div class="watched_bar"></div>
+                <div class="watched_number"></div>
+            </div>
+            <div class="history_infor">
+                <div class="history_title"><a href="#">【TMEA现场放送】爷青回名场面！！！周杰伦神级经典曲目大串烧 为所有人的青春唱首歌 | 高光音乐...</a></div>
+                <div class="divice_times"><img src="img/zhuyuhang/手机.png"> <span>已看完</span></div>
+                <div class="history_user">
+                    <img src="img/zhuyuhang/channel/face/2c8fde67e423bff9d383fffc322404a88a88e5e7.jpg@72w_72h.webp">
+                    <span class="author">TMElive腾讯音乐超现场</span><div class="author_line"></div><span class="history_kind">音乐现场</span>
+                </div>
+                <img class="delete" src="img/zhuyuhang/垃圾桶.png">
+            </div>
+        </div>
+
+        <div class="history_item" id="item6">
+            <div class="small_pointer"></div>
+            <div class="history_time">2021-12-20</div>
+            <div class="history_img">
+                <div class="watched_bar"></div>
+                <div class="watched_number"></div>
+            </div>
+            <div class="history_infor">
+                <div class="history_title"><a href="#">【兰亭序】古筝（纯筝）一首经典绝美的中国风，杰伦YYDS</a></div>
+                <div class="divice_times"><img src="img/zhuyuhang/手机.png"> <span>看到</span> 01:20</div>
+                <div class="history_user">
+                    <img src="img/zhuyuhang/channel/face/cd6e4d04b23f0ecd96fec6fd4c4d15d630d42a6b.jpg@72w_72h.webp">
+                    <span class="author">崔江卉</span><div class="author_line"></div><span class="history_kind">粉丝创作</span>
+                </div>
+                <img class="delete" src="img/zhuyuhang/垃圾桶.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
